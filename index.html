@@ -4,70 +4,42 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>ASMOV22 | Cyber Security Lab</title>
+<title>ASMOV22 | CYBER SECURITY LAB</title>
 <style>
 *{box-sizing:border-box}
 body{
-  margin:0;
-  background:#05080c;
-  color:#00ff9c;
-  font-family:monospace;
-  text-align:center;
-  min-height:100vh;
-  display:flex;
-  align-items:center;
-  justify-content:center;
-  padding:20px;
+ margin:0;min-height:100vh;display:flex;align-items:center;
+ justify-content:center;padding:20px;background:#080808;
+ color:white;font-family:Arial,sans-serif;text-align:center
 }
-.panel{
-  max-width:650px;
-  width:100%;
-  border:1px solid #00ff9c;
-  padding:35px 20px;
-  border-radius:12px;
-  box-shadow:0 0 25px #00ff9c22;
+.card{
+ width:100%;max-width:600px;padding:30px 20px;
+ border:1px solid #ff2020;border-radius:16px;
+ box-shadow:0 0 30px #ff000033
 }
-h1{font-size:clamp(25px,6vw,42px)}
-p{color:#b9c8c2;line-height:1.9}
-.terminal{
-  text-align:left;
-  direction:ltr;
-  background:#000;
-  padding:15px;
-  border-radius:8px;
-  color:#00ff9c;
-  line-height:1.9;
-  overflow-wrap:anywhere;
+.avatar{
+ width:150px;height:150px;margin:auto auto 20px;
+ border:3px solid #ff2020;border-radius:50%;
+ display:flex;align-items:center;justify-content:center;
+ background:#180505;color:#ff3030;font-size:48px;
+ font-weight:bold;box-shadow:0 0 25px #ff000044
 }
-button{
-  background:#00ff9c;
-  color:#00150b;
-  border:0;
-  padding:13px 22px;
-  font-weight:bold;
-  border-radius:6px;
-  cursor:pointer;
-  margin-top:15px;
-}
-#status{color:#00ff9c}
+h1{color:#ff3030;font-size:38px;margin:10px 0}
+h2{letter-spacing:3px;font-size:17px}
+p{color:#bbb;line-height:1.9}
+.line{height:1px;background:#ff2020;margin:25px 0}
+.tag{color:#ff3030;font-family:monospace}
 </style>
 </head>
 <body>
-<main class="panel">
-  <h1>⌘ ASMOV22</h1>
+<main class="card">
+  <div class="avatar">A22</div>
+  <h1>ASMOV22</h1>
   <h2>CYBER SECURITY LAB</h2>
-  <p>مرحباً بك في مختبر الأمن السيبراني</p>
-  <div class="terminal">
-    <div>&gt; Initializing secure lab...</div>
-    <div>&gt; Identity: ASMOV22</div>
-    <div>&gt; Mode: EDUCATIONAL</div>
-    <div>&gt; Status: <span id="status">READY</span></div>
-  </div>
-  <p>تعلّم. اختبر. اكتشف. احمِ.</p>
-  <button onclick="document.getElementById('status').textContent='SYSTEM ONLINE'">
-    INITIALIZE LAB
-  </button>
-  <p>AUTHORIZED SECURITY RESEARCH ONLY</p>
+  <div class="line"></div>
+  <p>مرحباً بكم في مختبر الأمن السيبراني</p>
+  <p class="tag">[ SYSTEM ONLINE ]</p>
+  <p>LEARN • TEST • PROTECT</p>
 </main>
 </body>
 </html>
