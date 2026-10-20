@@ -2,44 +2,151 @@
 <!DOCTYPE html>
 <html lang="ar" dir="rtl">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>ASMOV22 | CYBER SECURITY LAB</title>
-<style>
-*{box-sizing:border-box}
-body{
- margin:0;min-height:100vh;display:flex;align-items:center;
- justify-content:center;padding:20px;background:#080808;
- color:white;font-family:Arial,sans-serif;text-align:center
-}
-.card{
- width:100%;max-width:600px;padding:30px 20px;
- border:1px solid #ff2020;border-radius:16px;
- box-shadow:0 0 30px #ff000033
-}
-.avatar{
- width:150px;height:150px;margin:auto auto 20px;
- border:3px solid #ff2020;border-radius:50%;
- display:flex;align-items:center;justify-content:center;
- background:#180505;color:#ff3030;font-size:48px;
- font-weight:bold;box-shadow:0 0 25px #ff000044
-}
-h1{color:#ff3030;font-size:38px;margin:10px 0}
-h2{letter-spacing:3px;font-size:17px}
-p{color:#bbb;line-height:1.9}
-.line{height:1px;background:#ff2020;margin:25px 0}
-.tag{color:#ff3030;font-family:monospace}
-</style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#050505">
+  <title>ASMOV22 | Cyber Security Lab</title>
+
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      min-height: 100vh;
+      background:
+        radial-gradient(ellipse at center, #300000 0%, #100000 35%, #030303 75%);
+      color: #f5f5f5;
+      font-family: Arial, sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      overflow-x: hidden;
+    }
+
+    .container {
+      width: 100%;
+      max-width: 700px;
+      padding: 35px 20px;
+    }
+
+    .status {
+      color: #ff3333;
+      font-size: 12px;
+      letter-spacing: 3px;
+      margin-bottom: 25px;
+      animation: blink 1.5s infinite;
+    }
+
+    .avatar {
+      width: 180px;
+      height: 180px;
+      object-fit: cover;
+      border-radius: 50%;
+      border: 3px solid #ff2020;
+      box-shadow:
+        0 0 15px #ff0000,
+        0 0 45px #8b0000;
+      display: block;
+      margin: 0 auto 25px;
+    }
+
+    h1 {
+      font-size: clamp(38px, 10vw, 66px);
+      margin: 10px 0;
+      color: #ff2525;
+      letter-spacing: 5px;
+      text-shadow: 0 0 18px #a00000;
+    }
+
+    .subtitle {
+      color: #cccccc;
+      font-size: 14px;
+      letter-spacing: 2px;
+      margin-bottom: 30px;
+    }
+
+    .terminal {
+      background: rgba(0, 0, 0, 0.8);
+      border: 1px solid #7d1111;
+      border-radius: 10px;
+      padding: 20px;
+      text-align: left;
+      direction: ltr;
+      box-shadow: 0 0 25px rgba(255, 0, 0, 0.12);
+      line-height: 2;
+      font-family: monospace;
+      font-size: 13px;
+    }
+
+    .red {
+      color: #ff3333;
+    }
+
+    .green {
+      color: #00ff99;
+    }
+
+    .white {
+      color: #eeeeee;
+    }
+
+    .warning {
+      color: #ff3333;
+      border: 1px solid #6e1111;
+      margin-top: 25px;
+      padding: 12px;
+      font-size: 12px;
+      letter-spacing: 1px;
+    }
+
+    footer {
+      color: #777;
+      font-size: 11px;
+      margin-top: 25px;
+    }
+
+    @keyframes blink {
+      50% { opacity: 0.35; }
+    }
+  </style>
 </head>
+
 <body>
-<main class="card">
-  <div class="avatar">A22</div>
-  <h1>ASMOV22</h1>
-  <h2>CYBER SECURITY LAB</h2>
-  <div class="line"></div>
-  <p>مرحباً بكم في مختبر الأمن السيبراني</p>
-  <p class="tag">[ SYSTEM ONLINE ]</p>
-  <p>LEARN • TEST • PROTECT</p>
-</main>
+  <main class="container">
+
+    <div class="status">● SYSTEM ONLINE — DEMO MODE</div>
+
+    <img
+      class="avatar"
+      src="file_000000006710820881215669aeb5720e.png"
+      alt="ASMOV22 Profile Image"
+    >
+
+    <h1>ASMOV22</h1>
+
+    <div class="subtitle">
+      CYBER SECURITY LAB
+    </div>
+
+    <section class="terminal">
+      <div class="red">root@asmov22:~# initializing_system</div>
+      <div class="green">[ OK ] Security interface loaded</div>
+      <div class="green">[ OK ] Terminal simulation active</div>
+      <div class="white">[ INFO ] Welcome to the lab...</div>
+      <div class="red">root@asmov22:~# <span class="green">_</span></div>
+    </section>
+
+    <div class="warning">
+      ⚠ SIMULATION ENVIRONMENT — VISUAL DEMO ONLY
+    </div>
+
+    <footer>
+      DESIGNED BY ASMOV22 © 2026
+    </footer>
+
+  </main>
 </body>
 </html>
