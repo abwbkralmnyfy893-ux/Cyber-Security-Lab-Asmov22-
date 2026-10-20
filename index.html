@@ -1,0 +1,73 @@
+
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ASMOV22 | Cyber Security Lab</title>
+<style>
+*{box-sizing:border-box}
+body{
+  margin:0;
+  background:#05080c;
+  color:#00ff9c;
+  font-family:monospace;
+  text-align:center;
+  min-height:100vh;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  padding:20px;
+}
+.panel{
+  max-width:650px;
+  width:100%;
+  border:1px solid #00ff9c;
+  padding:35px 20px;
+  border-radius:12px;
+  box-shadow:0 0 25px #00ff9c22;
+}
+h1{font-size:clamp(25px,6vw,42px)}
+p{color:#b9c8c2;line-height:1.9}
+.terminal{
+  text-align:left;
+  direction:ltr;
+  background:#000;
+  padding:15px;
+  border-radius:8px;
+  color:#00ff9c;
+  line-height:1.9;
+  overflow-wrap:anywhere;
+}
+button{
+  background:#00ff9c;
+  color:#00150b;
+  border:0;
+  padding:13px 22px;
+  font-weight:bold;
+  border-radius:6px;
+  cursor:pointer;
+  margin-top:15px;
+}
+#status{color:#00ff9c}
+</style>
+</head>
+<body>
+<main class="panel">
+  <h1>⌘ ASMOV22</h1>
+  <h2>CYBER SECURITY LAB</h2>
+  <p>مرحباً بك في مختبر الأمن السيبراني</p>
+  <div class="terminal">
+    <div>&gt; Initializing secure lab...</div>
+    <div>&gt; Identity: ASMOV22</div>
+    <div>&gt; Mode: EDUCATIONAL</div>
+    <div>&gt; Status: <span id="status">READY</span></div>
+  </div>
+  <p>تعلّم. اختبر. اكتشف. احمِ.</p>
+  <button onclick="document.getElementById('status').textContent='SYSTEM ONLINE'">
+    INITIALIZE LAB
+  </button>
+  <p>AUTHORIZED SECURITY RESEARCH ONLY</p>
+</main>
+</body>
+</html>
